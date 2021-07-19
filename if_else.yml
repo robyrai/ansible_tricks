@@ -1,0 +1,10 @@
+# my_var: the variable declared
+
+# VAR: the variable, whose value is to be checked
+
+# param_1, param_2: values of the variable VAR
+
+# value_1, value_2, value_3: the values to be assigned to my_var according to the values of my_var
+
+---
+- my_var: "{{ 'value_1' if VAR == 'param_1' else 'value_2' if VAR == 'param_2' else 'value_3' }}"
